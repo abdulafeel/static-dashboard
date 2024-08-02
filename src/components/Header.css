@@ -1,0 +1,16 @@
+.profile-container {
+  height: 40px;
+  width: 40px;
+  border: 1px solid #ccc;
+  border-radius: 50%; /* Make it a circle */
+  overflow: hidden; /* Ensures the image doesn't overflow the border */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-container img {
+  height: 100%; /* Use 100% for perfect fitting */
+  width: 100%;
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+}

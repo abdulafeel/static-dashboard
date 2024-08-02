@@ -1,0 +1,9 @@
+.sideBarIcons:hover{
+color: #507dd6;
+}
+
+.home{
+    border: 1px solid #507dd6;
+    border-radius: 8px;
+    padding: 2px;
+}
