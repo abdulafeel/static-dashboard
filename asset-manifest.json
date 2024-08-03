@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/fitpeo-dashboard/static/css/main.98bdb1f4.css",
+    "main.js": "/fitpeo-dashboard/static/js/main.c24e8d01.js",
+    "static/js/453.a0afd08c.chunk.js": "/fitpeo-dashboard/static/js/453.a0afd08c.chunk.js",
+    "static/media/24.jpg": "/fitpeo-dashboard/static/media/24.6652b56a5e04d259e16a.jpg",
+    "index.html": "/fitpeo-dashboard/index.html",
+    "main.98bdb1f4.css.map": "/fitpeo-dashboard/static/css/main.98bdb1f4.css.map",
+    "main.c24e8d01.js.map": "/fitpeo-dashboard/static/js/main.c24e8d01.js.map",
+    "453.a0afd08c.chunk.js.map": "/fitpeo-dashboard/static/js/453.a0afd08c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.98bdb1f4.css",
+    "static/js/main.c24e8d01.js"
+  ]
+}
