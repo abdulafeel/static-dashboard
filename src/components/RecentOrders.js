@@ -3,6 +3,13 @@
 import React from "react";
 import styled from "styled-components";
 import { FaCheckCircle, FaTimesCircle, FaHourglassHalf } from "react-icons/fa";
+import profilePic1 from "../assets/user1.jpg"; // Example image
+import profilePic2 from "../assets/24.jpg"; // Example image
+import profilePic3 from "../assets/33.jpg"; // Example image
+import profilePic4 from "../assets/90.jpg"; // Example image
+import profilePic5 from "../assets/67.jpg"; // Example image
+import profilePic6 from "../assets/43.jpg"; // Example image
+import './Sidebar.css'
 
 const OrdersContainer = styled.div`
   background-color: #242424;
@@ -47,12 +54,6 @@ const Table = styled.table`
     background-color: #1e1e1e; /* Add hover effect for better UX */
   }
 
-  @media (max-width: 768px) {
-    th,
-    td {
-      font-size: 14px;
-    }
-  }
 `;
 
 const StatusIcon = styled.div`
@@ -76,6 +77,13 @@ const StatusText = styled.span`
   margin-left: 5px;
 `;
 
+const CustomerImage = styled.img`
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #444; /* Border to make it stand out */
+`;
+
 const RecentOrders = () => {
   return (
     <OrdersContainer>
@@ -91,7 +99,10 @@ const RecentOrders = () => {
         </thead>
         <tbody>
           <tr>
-            <td>Wade Warren</td>
+            <td className="customer-container">
+              <CustomerImage src={profilePic6} alt="Dianne Russell" />
+              Wade Warren
+            </td>
             <td>15478256</td>
             <td>$124.00</td>
             <td>
@@ -102,7 +113,10 @@ const RecentOrders = () => {
             </td>
           </tr>
           <tr>
-            <td>Jane Cooper</td>
+            <td className="customer-container">
+              <CustomerImage src={profilePic5} alt="Dianne Russell" />
+              Jane Cooper
+            </td>
             <td>48965786</td>
             <td>$305.02</td>
             <td>
@@ -113,7 +127,10 @@ const RecentOrders = () => {
             </td>
           </tr>
           <tr>
-            <td>Guy Hawkins</td>
+            <td className="customer-container">
+              <CustomerImage src={profilePic4} alt="Dianne Russell" />
+              Guy Hawkins
+            </td>
             <td>78958215</td>
             <td>$45.88</td>
             <td>
@@ -124,7 +141,10 @@ const RecentOrders = () => {
             </td>
           </tr>
           <tr>
-            <td>Kristin Watson</td>
+            <td className="customer-container">
+              <CustomerImage src={profilePic3} alt="Dianne Russell" />
+              Kristin Watson
+            </td>
             <td>20965732</td>
             <td>$365.00</td>
             <td>
@@ -135,7 +155,10 @@ const RecentOrders = () => {
             </td>
           </tr>
           <tr>
-            <td>Cody Fisher</td>
+            <td className="customer-container">
+              <CustomerImage src={profilePic2} alt="Dianne Russell" />
+              Cody Fisher
+            </td>
             <td>95715620</td>
             <td>$545.00</td>
             <td>
@@ -146,7 +169,10 @@ const RecentOrders = () => {
             </td>
           </tr>
           <tr>
-            <td>Savannah Nguyen</td>
+            <td className="customer-container">
+              <CustomerImage src={profilePic1} alt="Dianne Russell" />
+              Savannah Nguyen
+            </td>
             <td>78514568</td>
             <td>$128.20</td>
             <td>

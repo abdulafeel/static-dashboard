@@ -5,11 +5,12 @@ import styled from "styled-components";
 import { FaBullseye, FaUtensils, FaClipboardList } from "react-icons/fa";
 
 const Card = styled.div`
-  background-color: #1e1e1e; // Changed to slightly darker background
+  background-color: #2a2a2a; // Match the background color with ActivityChart
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Increased shadow intensity for a more pronounced look
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  margin-top: 40px;
   height: 300px; /* Match the height of ActivityChart */
   display: flex;
   flex-direction: column;
@@ -18,9 +19,9 @@ const Card = styled.div`
 `;
 
 const Title = styled.h3`
-  font-size: 20px;
-  color: #fff;
-  margin-bottom: 10px; // Reduced margin for more compactness
+  font-size: 24px; // Match font size with ActivityChart
+  color: #f1f1f1; // Consistent color scheme
+  margin-bottom: 20px; // Match spacing with ActivityChart
   font-weight: bold;
 `;
 
@@ -28,12 +29,13 @@ const Item = styled.div`
   display: flex;
   align-items: center;
   gap: 15px; // Increased gap for better spacing between icon and text
-  padding: 8px;
-  background-color: #2c2c2c; // Darker item background for contrast
+  padding: 5px; // Adjusted padding for better layout
+  background-color: #333; // Darker item background for contrast
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s, transform 0.3s; // Added transform transition
-
+  margin-bottom: 10px;
+  
   &:hover {
     background-color: #3a3a3a; // Slightly lighter hover effect for better contrast
     transform: translateY(-2px); // Subtle lifting effect on hover
@@ -52,7 +54,7 @@ const IconWrapper = styled.div`
   align-items: center;
   width: 40px;
   height: 40px;
-  background-color: #333;
+  background-color: #444; // Match color scheme
   border-radius: 50%;
   padding: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); // Shadow to highlight the icon container

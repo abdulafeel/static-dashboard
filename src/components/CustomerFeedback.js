@@ -4,11 +4,17 @@ import React from "react";
 import styled from "styled-components";
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 import profilePic1 from "../assets/user1.jpg"; // Example image
+import profilePic2 from "../assets/24.jpg"; // Example image
+import profilePic3 from "../assets/33.jpg"; // Example image
+import profilePic4 from "../assets/90.jpg"; // Example image
+import profilePic5 from "../assets/67.jpg"; // Example image
+import profilePic6 from "../assets/43.jpg"; // Example image
 
 
 const FeedbackContainer = styled.div`
   background-color: #242424;
   padding: 20px;
+  margin-top: 50px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 400px; /* Match the height of RecentOrders */
@@ -92,7 +98,7 @@ const CustomerFeedback = () => {
       </Feedback>
       <Feedback>
         <Customer>
-          <CustomerImage src={profilePic1} alt="Dianne Russell" />
+          <CustomerImage src={profilePic2} alt="Dianne Russell" />
           <CustomerName>Dianne Russell</CustomerName>
           <Rating>
             <FaStar />
@@ -109,7 +115,7 @@ const CustomerFeedback = () => {
       </Feedback>
       <Feedback>
         <Customer>
-          <CustomerImage src={profilePic1} alt="Devon Lane" />
+          <CustomerImage src={profilePic3} alt="Devon Lane" />
           <CustomerName>Devon Lane</CustomerName>
           <Rating>
             <FaStar />
@@ -125,7 +131,7 @@ const CustomerFeedback = () => {
       </Feedback>
       <Feedback>
         <Customer>
-          <CustomerImage src={profilePic1} alt="John Wick" />
+          <CustomerImage src={profilePic4} alt="John Wick" />
           <CustomerName>John Wick</CustomerName>
           <Rating>
             <FaStar />
@@ -138,7 +144,7 @@ const CustomerFeedback = () => {
       </Feedback>
       <Feedback>
         <Customer>
-          <CustomerImage src={profilePic1} alt="Lee Cooper" />
+          <CustomerImage src={profilePic5} alt="Lee Cooper" />
           <CustomerName>Lee Cooper</CustomerName>
           <Rating>
             <FaStar />
@@ -151,7 +157,7 @@ const CustomerFeedback = () => {
       </Feedback>
       <Feedback>
         <Customer>
-          <CustomerImage src={profilePic1} alt="Iliyana Dcruz" />
+          <CustomerImage src={profilePic6} alt="Iliyana Dcruz" />
           <CustomerName>Iliyana Dcruz</CustomerName>
           <Rating>
             <FaStar />
@@ -160,7 +166,11 @@ const CustomerFeedback = () => {
             <FaStar />
           </Rating>
         </Customer>
-        <Comment>Oreo milkshake was so yummyyyyyy...</Comment>
+        <Comment>
+          Oreo milkshake was so yummyyyyyy!! I had a burger over greens
+          (gluten-free), which was also very good. They were very conscientious
+          about gluten allergies....
+        </Comment>
       </Feedback>
       {/* Add more feedback items as needed */}
     </FeedbackContainer>

@@ -7,3 +7,18 @@ color: #507dd6;
     border-radius: 8px;
     padding: 2px;
 }
+
+.customer-container{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.sideBarIcons {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.sideBarIcons:hover {
+  transform: scale(1.2); /* Slightly enlarge icons on hover */
+  color: #ffffff; /* Change color on hover */
+}

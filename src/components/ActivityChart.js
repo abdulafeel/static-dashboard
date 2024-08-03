@@ -22,7 +22,10 @@ const ChartContainer = styled.div`
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Deeper shadow for a more pronounced effect
   margin-bottom: 50px;
-  height: 320px; // Adjusted height for better alignment with the design
+  height: 300px; // Adjusted height for better alignment with the design
+  display: flex; /* Ensure content is centered */
+  flex-direction: column;
+  justify-content: space-between;
 `;
 
 // Styled component for the chart title
@@ -30,6 +33,7 @@ const Title = styled.h2`
   font-weight: bold;
   color: #f1f1f1; // Brighter color for better visibility
   margin-bottom: 20px;
+  font-size: 24px; // Adjusted font size for better visual consistency
 `;
 
 // Sample data for the chart
@@ -49,15 +53,15 @@ const ActivityChart = () => {
   return (
     <ChartContainer>
       <Title>Activity</Title>
-      <ResponsiveContainer width="100%" height="85%">
+      <ResponsiveContainer width="100%" height="100%">
         {" "}
-        {/* Use 85% height for better fit */}
-        <BarChart width={600} height={250} data={data}>
+        {/* Use full height for better fit */}
+        <BarChart data={data}>
           {" "}
           {/* Adjusted height for balance */}
           <XAxis dataKey="name" stroke="#ddd" />{" "}
           {/* Changed axis color for better readability */}
-          <YAxis />
+          <YAxis stroke="#ddd" />
           <Tooltip
             wrapperStyle={{
               width: 120,
@@ -75,7 +79,7 @@ const ActivityChart = () => {
           />
           <CartesianGrid stroke="#444" strokeDasharray="3 3" />{" "}
           {/* Lighter grid lines for a cleaner look */}
-          <Bar dataKey="value" fill="#4a90e2" barSize={20} />{" "}
+          <Bar dataKey="value" fill="#4a90e2" barSize={30} />{" "}
           {/* Changed bar color to match image */}
         </BarChart>
       </ResponsiveContainer>

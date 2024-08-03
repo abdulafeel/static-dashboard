@@ -8,11 +8,11 @@ import { FaDollarSign } from "react-icons/fa";
 
 const Card = styled.div`
   background-color: #333;
-  padding: 25px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
-  height: 150px; /* Match the height of StatsCards */
+  height: 180px; /* Match the height of StatsCards */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,8 +29,8 @@ const IconContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  width: 70px; /* Increased size for uniformity */
+  height: 70px; /* Increased size for uniformity */
   color: #fff;
   margin-right: 20px;
 `;
@@ -43,7 +43,7 @@ const InfoContainer = styled.div`
 const Amount = styled.h2`
   margin: 0;
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 2rem; /* Match font size with StatsCards */
   font-weight: bold;
 `;
 
@@ -62,7 +62,7 @@ const NetProfitCard = () => {
   return (
     <Card>
       <IconContainer>
-        <FaDollarSign size={24} />
+        <FaDollarSign size={28} /> {/* Increased icon size */}
       </IconContainer>
       <InfoContainer>
         <Amount>$6759.25</Amount>
