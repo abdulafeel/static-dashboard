@@ -166,11 +166,7 @@ const CustomerFeedback = () => {
             <FaStar />
           </Rating>
         </Customer>
-        <Comment>
-          Oreo milkshake was so yummyyyyyy!! I had a burger over greens
-          (gluten-free), which was also very good. They were very conscientious
-          about gluten allergies....
-        </Comment>
+        <Comment>Oreo milkshake was so yummyyyyyy!! I had a burger over greens (gluten-free), which was also very good. They were very conscientious about gluten allergies....</Comment>
       </Feedback>
       {/* Add more feedback items as needed */}
     </FeedbackContainer>

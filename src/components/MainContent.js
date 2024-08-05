@@ -18,12 +18,20 @@ const MainContainer = styled.div`
   flex: 1;
   overflow-y: auto;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin-left: 0;
+    padding: 10px;
+  }
 `;
 
 const LeftColumn = styled.div`
   flex: 2;
   padding-right: 20px;
 
+  @media (max-width: 768px) {
+    padding-right: 0;
+  }
 `;
 
 const RightColumn = styled.div`
